@@ -228,12 +228,18 @@ header .cta a:hover {
     transition: transform 0.6s ease-in-out;
 }
 
+
+
 .carousel img {
-    width: 100%;
+    width: 100%;      /* keeps it inside carousel width */
     flex: 0 0 100%;
-    object-fit: cover;
+    height: 300px;    /* fixed height for smaller appearance */
+    object-fit: cover; /* crop/fit nicely */
     border-radius: 12px;
 }
+
+
+
 
 /* Carousel Buttons */
 .carousel button {
