@@ -147,40 +147,66 @@ footer {
 
 
 
-/* Make header a solid blue background */
-header {
-  background-color: #1e3a8a; /* deep blue */
-  color: white;
+
+
+
+
+
+
+
+
+
+
+
+/* Hero/Header Container */
+.header-container {
+  max-width: 700px;
+  width: 90%;
+  background-color: #002D62;  /* deep navy */
+  color: #86CEFA;             /* light blue text */
   text-align: center;
-  padding: 80px 20px;
+  border-radius: 12px;
+  padding: 40px 25px;
+  margin: 40px auto;          /* centers horizontally */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  font-family: "Helvetica", "Courier New", sans-serif;
 }
 
-header h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+/* Header text */
+.header-container h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
   margin-bottom: 15px;
+  letter-spacing: 1px;
 }
 
-header p {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1.2rem;
+.header-container p {
+  font-size: 1.1rem;
+  line-height: 1.5;
   margin-bottom: 25px;
 }
 
-header .cta a {
+/* CTA Button */
+.header-container .cta a {
   display: inline-block;
-  background: #2563eb; /* lighter blue button */
-  color: white;
-  padding: 12px 24px;
-  border-radius: 6px;
+  background-color: #86CEFA; /* light blue button */
+  color: #002D62;            /* navy text for contrast */
   text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 8px;
   font-weight: bold;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-header .cta a:hover {
-  background: #3b82f6;
+.header-container .cta a:hover {
+  background-color: #a5e0ff; /* slightly brighter on hover */
+  transform: translateY(-2px);
 }
+
+
+
+
+
 
 
 
