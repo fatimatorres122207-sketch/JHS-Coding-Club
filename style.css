@@ -165,3 +165,45 @@ footer {
     text-align: center;
     font-weight: bold;
 }
+
+
+
+
+
+/* Make header a solid blue background */
+header {
+  background-color: #1e3a8a; /* deep blue */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+header .cta a {
+  display: inline-block;
+  background: #2563eb; /* lighter blue button */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+header .cta a:hover {
+  background: #3b82f6;
+}
+
+
+
