@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom right, #000435, #000435);
+    background: linear-gradient(to bottom right, #000435, #000237);
     color: white;
     font-family: "Helvetica", "Courier New", sans-serif;
     text-align: center;
@@ -162,8 +162,8 @@ footer {
 .header-container {
   max-width: 700px;
   width: 90%;
-  background-color: #002D62;  /* deep navy */
-  color: #86CEFA;             /* light blue text */
+  background-color: #000124;  /* deep navy */
+  color: #000237;             /* light blue text */
   text-align: center;
   border-radius: 12px;
   padding: 40px 25px;
@@ -189,8 +189,8 @@ footer {
 /* CTA Button */
 .header-container .cta a {
   display: inline-block;
-  background-color: #86CEFA; /* light blue button */
-  color: #002D62;            /* navy text for contrast */
+  background-color: #000237; /* light blue button */
+  color: #000124;            /* navy text for contrast */
   text-decoration: none;
   padding: 12px 28px;
   border-radius: 8px;
@@ -226,7 +226,7 @@ footer {
 .header-container {
     max-width: 850px;
     width: 100%;
-    background: linear-gradient(135deg, #a5d8ff, #d0ebff); /* light blue gradient */
+    background: linear-gradient(135deg, #000124, #000237); /* light blue gradient */
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0, 0, 50, 0.15); /* softer shadow */
     padding: clamp(1.2rem, 4vw, 2.5rem);
