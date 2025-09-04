@@ -49,6 +49,38 @@
   </header>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   <!-- Mission Section -->
     <div class="info-box">
       <h2>Our Mission</h2>
@@ -60,9 +92,6 @@
 
   <br>
 <br>
-
-
-
   
   <!-- Guest Speakers -->
     <div class="info-box">
@@ -73,32 +102,39 @@
       </p>
     </div>
 
-
-
-
-
-
-
-
-  
     <div class="cta">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxVOaNdsKPMFba6CWx1SLIHg5NZf8zROF7osJ8x9bDNVJmqA/viewform?usp=header" target="_blank">
         Become a Guest Speaker
       </a>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
   <br>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -114,28 +150,5 @@
       <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
   </footer>
-
-  <!-- Carousel Script -->
-  <script>
-    const track = document.querySelector('.carousel-track');
-    const slides = Array.from(track.children);
-    const nextButton = document.querySelector('.next');
-    const prevButton = document.querySelector('.prev');
-    let currentIndex = 0;
-
-    function updateCarousel() {
-      track.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
-
-    nextButton.addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % slides.length;
-      updateCarousel();
-    });
-
-    prevButton.addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-      updateCarousel();
-    });
-  </script>
 </body>
 </html>
