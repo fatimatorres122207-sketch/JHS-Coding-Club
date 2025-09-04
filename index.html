@@ -4,21 +4,156 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="JHS Coding Club" />
-  <meta name="author" content="Jeffersons Coding Club" />
+  <meta name="author" content="Jefferson High Coding Club" />
   <meta name="keywords" content="code, highschool, coding, tech, Cedar Rapids, software, 2025, register" />
 
   <meta property="og:title" content="JHS Coding Club" />
-  <meta property="og:description" content="JHS Coding Club" />
-  <!-- Remove image and just let it show blue -->
-  <meta property="og:image" content="" />
+  <meta property="og:description" content="Join Jefferson High’s official coding club — learn, build, and innovate with us." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://googolgenius.github.io/JeffersonHighSchoolCODE/" />
 
   <title>JHS Coding Club</title>
-  <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="crschools.jpg" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+
+  <style>
+    :root {
+      --blue: #2563eb;
+      --blue-dark: #1d4ed8;
+      --light: #f9fafb;
+      --dark: #1f2937;
+      --muted: #6b7280;
+      --shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "Inter", sans-serif; line-height: 1.6; background: var(--light); color: var(--dark); }
+
+    /* Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 8%;
+      box-shadow: var(--shadow);
+      z-index: 50;
+    }
+    nav .logo { font-size: 20px; font-weight: 700; color: var(--blue-dark); }
+    nav .links a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav .links a:hover { color: var(--blue); }
+
+    /* Hero */
+    header {
+      background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    header h1 { font-size: 42px; margin-bottom: 16px; }
+    header p { font-size: 18px; max-width: 700px; margin: 0 auto 24px; }
+    .cta a {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #fff;
+      color: var(--blue-dark);
+      font-weight: 600;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .cta a:hover { background: var(--light); transform: translateY(-2px); }
+
+    /* Carousel */
+    .carousel {
+      position: relative;
+      max-width: 900px;
+      margin: 50px auto;
+      overflow: hidden;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    .carousel img {
+      width: 100%;
+      flex-shrink: 0;
+    }
+    .carousel button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 12px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+    .carousel .prev { left: 15px; }
+    .carousel .next { right: 15px; }
+
+    /* Sections */
+    section {
+      padding: 70px 8%;
+      text-align: center;
+    }
+    section h2 { font-size: 28px; margin-bottom: 20px; }
+    .info-box {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .info-box p { color: var(--muted); margin-top: 10px; }
+
+    /* Footer */
+    footer {
+      background: #fff;
+      padding: 30px 10px;
+      text-align: center;
+      border-top: 1px solid #e5e7eb;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 50px;
+    }
+    footer p { margin: 8px 0; }
+    .social-links a {
+      margin: 0 10px;
+      font-size: 18px;
+      color: var(--blue-dark);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .social-links a:hover { color: var(--blue); }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav .links { display: none; }
+      header h1 { font-size: 32px; }
+      section h2 { font-size: 24px; }
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation -->
@@ -31,171 +166,87 @@
     </div>
   </nav>
 
-<br>
-<br>
-<br>
-<br>
-  <br>
-
-  
-  <!-- Hero/Header -->
-<header>
-        <div class="info-box">
-          
-          
-        <h1>JHS Coding Club</h1>
-    <p>
-      Welcome to Jefferson High School’s official Coding Club! Learn, build, and innovate with us.
-    </p>
+  <!-- Hero -->
+  <header>
+    <h1>JHS Coding Club</h1>
+    <p>Welcome to Jefferson High School’s official Coding Club! Learn, build, and innovate with us.</p>
     <div class="cta">
       <a href="about.html">Learn More</a>
     </div>
-  </div>
-</header>
+  </header>
 
-<br>
-
-  
-
-<div class="carousel">
-  <div class="carousel-track">
-    <img src="club.png" alt="Club Activity 1">
-    <img src="club2.png" alt="Club Activity 2">
-    <img src="club3.png" alt="Club Activity 3">
-  </div>
-  <button class="prev">&#10094;</button>
-  <button class="next">&#10095;</button>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-<br>
-
-    <!-- Mission Section -->
-    <section>
-    <section class="info-box">
-            <h2>Our Mission</h2>
-            <p>
-                We aim to inspire Jefferson High students to explore technology, develop coding skills, and apply their creativity through real-world projects.
-            </p>
-    </section>
-<br>
-    <!-- Guest Speakers Section -->
-        <h2>Guest Speakers</h2>
-        <div class="info-box">
-            <p>
-                Our club regularly hosts guest speakers from tech and software careers. These talks inspire students by showing the many paths computer science can lead to.
-            </p>
-        </div>
-
-
-
-<br>
-
-      
-        <div class="cta">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxVOaNdsKPMFba6CWx1SLIHg5NZf8zROF7osJ8x9bDNVJmqA/viewform?usp=header" target="_blank">
-                Become a Guest Speaker
-            </a>
-        </div>
-
-<br>
-      
-<span style="display:block; margin-top:4px;">
-        <div class="cta">
-            <a href="https://www.instagram.com/jhs_code/" target="_blank">
-                Follow Us on Instagram
-            </a></span>    
+  <!-- Carousel -->
+  <div class="carousel">
+    <div class="carousel-track">
+      <img src="club.png" alt="Club Activity 1">
+      <img src="club2.png" alt="Club Activity 2">
+      <img src="club3.png" alt="Club Activity 3">
     </div>
-    </section>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
 
-    <!-- Footer -->
+  <!-- Mission Section -->
+  <section>
+    <div class="info-box">
+      <h2>Our Mission</h2>
+      <p>We aim to inspire Jefferson High students to explore technology, develop coding skills, and apply their creativity through real-world projects.</p>
+    </div>
+  </section>
 
+  <!-- Guest Speakers -->
+  <section>
+    <h2>Guest Speakers</h2>
+    <div class="info-box">
+      <p>Our club regularly hosts guest speakers from tech and software careers. These talks inspire students by showing the many paths computer science can lead to.</p>
+    </div>
+    <br>
+    <div class="cta">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxVOaNdsKPMFba6CWx1SLIHg5NZf8zROF7osJ8x9bDNVJmqA/viewform?usp=header" target="_blank">
+        Become a Guest Speaker
+      </a>
+    </div>
+    <br>
+    <div class="cta">
+      <a href="https://www.instagram.com/jhs_code/" target="_blank">
+        Follow Us on Instagram
+      </a>
+    </div>
+  </section>
 
-
-  
-<footer style="
-  text-align: center; 
-  padding: 20px 10px; 
-  font-family: Arial, sans-serif; 
-">
-  <br>
-  <p style="margin: 5px 0; font-weight: 500;">
-    1243 20th Street SW, Cedar Rapids, IA 52404
-  </p>
-
-  <p style="margin: 5px 0;">
-    &copy; 2025 Jefferson High Coding Club
-  </p>
-  <br>
-
+  <!-- Footer -->
+  <footer>
+    <p>1243 20th Street SW, Cedar Rapids, IA 52404</p>
+    <p>&copy; 2025 Jefferson High Coding Club</p>
     <div class="social-links">
       <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
       <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
       <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
-  
-</footer>
+  </footer>
 
+  <!-- Carousel Script -->
+  <script>
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.next');
+    const prevButton = document.querySelector('.prev');
+    let currentIndex = 0;
 
+    function updateCarousel() {
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
 
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateCarousel();
+    });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Your normal HTML stuff here -->
-
-<script>
-  const track = document.querySelector('.carousel-track');
-  const slides = Array.from(track.children);
-  const nextButton = document.querySelector('.next');
-  const prevButton = document.querySelector('.prev');
-
-  let currentIndex = 0;
-
-  function updateCarousel() {
-    track.style.transform = `translateX(-${currentIndex * 100}%)`;
-  }
-
-  nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    updateCarousel();
-  });
-
-  prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    updateCarousel();
-  });
-</script>
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateCarousel();
+    });
+  </script>
 </body>
 </html>
-
-
-
